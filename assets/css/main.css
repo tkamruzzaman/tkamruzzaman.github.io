@@ -78,6 +78,11 @@ input, select, textarea {
 		box-sizing: border-box;
 	}
 
+	video {
+		width: 100%;
+		height: auto;
+	  }
+
 	*, *:before, *:after {
 		box-sizing: inherit;
 	}
