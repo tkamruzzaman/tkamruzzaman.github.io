@@ -1,12 +1,6 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
 
-/*
-	Prologue by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -81,7 +75,7 @@ input, select, textarea {
 	video {
 		width: 100%;
 		height: auto;
-	  }
+	}
 
 	*, *:before, *:after {
 		box-sizing: inherit;
@@ -2217,9 +2211,11 @@ input, select, textarea {
 			margin: 0;
 			overflow: hidden;
 			padding: 4em 0;
-			box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.025);
+			box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.05), inset 0 0.1em 0.1em 0 rgba(255, 255, 255, 0.025);
 			text-align: center;
-			background-image: url("images/overlay.png");
+			/*background-image: url("../../images/overlay.jpg");*/
+
+			
 		}
 
 			#main > section.dark {
@@ -2249,23 +2245,39 @@ input, select, textarea {
 				padding: 10em 0;
 				background-size: cover;
 				background-position: center center;
-			}
-
+			}	
+			
 			#main > section.one {
-				background-color: #81918E;
-				background-image: url("../../images/banner.jpg");
-			}
+				background-color: #00fa60;
 
+				/* The image used */
+				background-image: url("../../images/banner_blur.jpg");
+			
+				/* Add the blur effect */
+				/*filter: blur(4px);
+				-webkit-filter: blur(4px);
+			
+				/* Full height */
+				/*height: 100%;
+			
+				/* Center and scale the image nicely */
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+
+				-webkit-text-fill-color: #0f0f0f;
+			}	
+				
 			#main > section.two {
-				background-color: rgb(7, 7, 7) /*#f5fafa;*/
+				background-color: #141414/*#f5fafa;*/
 			}
 
 			#main > section.three {
-				background-color: rgb(7, 7, 7)/*#ecf1f1;*/
+				background-color: #141414/*#ecf1f1;*/
 			}
 
 			#main > section.four {
-				background-color: rgb(0, 0, 0)/*#e8edec;*/
+				background-color: #141414/*#e8edec;*/
 			}
 
 /* Wide */
