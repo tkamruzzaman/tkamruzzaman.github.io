@@ -189,10 +189,10 @@ video {
 body {
 	background: rgb(255, 255, 255);
 	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 19pt;
+	font-size: 15pt;
 	font-weight: 300;
 	line-height: 1.75em;
-	color: #888;
+	color: #cccccc;
 }
 
 body.is-preload *,
@@ -215,7 +215,7 @@ select {
 	font-size: 19pt;
 	font-weight: 300;
 	line-height: 1.75em;
-	color: #888;
+	color: #ffffff;
 }
 
 h1,
@@ -225,7 +225,7 @@ h4,
 h5,
 h6 {
 	font-weight: 300;
-	color: #c0894b;
+	color: #51b96a;
 	/*#666;*/
 	line-height: 1.5em;
 }
@@ -282,7 +282,7 @@ footer {
 
 strong,
 b {
-	font-weight: 300;
+	font-weight: 400;
 	color: #666;
 }
 
@@ -303,7 +303,7 @@ a {
 }
 
 a:hover {
-	color: #E27689;
+	color: #51b96a;
 	border-bottom-color: rgba(255, 255, 255, 0);
 }
 
@@ -2082,11 +2082,11 @@ button,
 	position: relative;
 	display: inline-block;
 	border-radius: 0.35em;
-	color: #ffc400 !important;
+	color: #ffffff !important;
 	/*#fff*/
 	text-decoration: none;
 	padding: 0.75em 2.5em 0.75em 2.5em;
-	background-color: #424242;
+	background-color: #51b96a;
 	/*#8ebebc;*/
 	border: 0;
 	cursor: pointer;
@@ -2132,7 +2132,7 @@ button:active,
 	padding: 0.5em 0 0.5em 0;
 	/*1em 0 1em 0;*/
 	font-size: 0.8em;
-	-webkit-text-fill-color: #ff0000;
+	-webkit-text-fill-color: #a1a1a1;
 }
 
 .item header h3 {
@@ -2158,6 +2158,7 @@ button:active,
 	text-transform: none !important;
 	font-family: 'Font Awesome 5 Free';
 	font-weight: 400;
+	font-size: 1.5em;
 }
 
 .icon:before {
@@ -2223,7 +2224,8 @@ button:active,
 }
 
 #header .icons {
-	font-size: 0.8em;
+	font-size: 1.0em;
+	/*0.8em*/
 	text-align: center;
 }
 
@@ -2236,7 +2238,7 @@ button:active,
 }
 
 #header .icons a:hover {
-	color: #fff;
+	color: #51b96a;
 }
 
 #logo {
@@ -2314,8 +2316,9 @@ button:active,
 }
 
 #nav ul li a.active span:before {
-	color: #c95e33;
-	/*#e27689;*/
+	color: #51b96a
+		/*#c95e33;*/
+
 }
 
 /* Footer */
@@ -2418,7 +2421,7 @@ button:active,
 	background-repeat: no-repeat;
 	background-size: cover;
 
-	-webkit-text-fill-color: #0f0f0f;
+	-webkit-text-fill-color: #000000;
 }
 
 #main>section.two {
