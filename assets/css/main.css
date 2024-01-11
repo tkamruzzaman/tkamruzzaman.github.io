@@ -2440,6 +2440,16 @@ button:active,
 		/*#e8edec;*/
 }
 
+#main>section.five {
+	background-color: #141414
+		/*#e8edec;*/
+}
+
+#main>section.six {
+	background-color: #141414
+		/*#e8edec;*/
+}
+
 /* Wide */
 
 @media screen and (min-width: 961px) and (max-width: 1880px) {
