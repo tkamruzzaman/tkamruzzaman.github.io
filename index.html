@@ -10,7 +10,6 @@
 </head>
 
 <body class="is-preload">
-
 	<!-- Header -->
 	<div id="header">
 		<div class="top">
@@ -124,138 +123,210 @@
 					<header>
 						<h3>Personal Projects</h3>
 					</header>
-					<div class="row">
-						<div class="col-4 col-12-mobile">
-							<article class="item">
+
+					<!-- Kitchen Chaos Modal -->
+					<div id="kitchenChaosModal" class="modal">
+						<div class="modal-content">
+							<span class="close" onclick="closeModal('kitchenChaosModal')">&times;</span>
+							<h2>Kitchen Chaos</h2>
+							<p>Co-op multiplayer game using NetCode for Gameobjects.</p>
+							<!-- Add more details and technical information here -->
+							<header>
+								<a href="https://tkamruzzaman.itch.io/smoking-bad" target="_blank"
+									class="icon solid fa-play fa-beat" , style="font-size: 14px; padding-right: 50px;">
+								</a>
 								<a href="https://github.com/tkamruzzaman/kitchen_chaos" target="_blank"
-									class="image fit"><img src="images/kitchen_chaos.png" alt="Kitchen Chaos" /></a>
-								<header>
-									<h3>Kitchen Chaos</h3>
-								</header>
-							</article>
-						</div>
-						<div class="col-4 col-12-mobile">
-							<article class="item">
-								<a href="https://tkamruzzaman.github.io/sand_balls/WebGLBuild/index.html"
-									target="_blank" class="image fit"><img src="images/sand_balls.gif" alt="Sand Balls" /></a>
-								<header>
-									<h3>Sand Balls</h3>
-								</header>
-							</article>
-						</div>
-						<div class="col-4 col-12-mobile">
-							<article class="item">
-								<a href="https://tkamruzzaman.github.io/2048-Unity//WebGLBuild/index.html"
-									target="_blank" class="image fit"><img src="images/2048.gif" alt="2048" /></a>
-								<header>
-									<h3>2048</h3>
-								</header>
-							</article>
+									class="icon brands fa-github" , style="font-size: 14px; padding-left: 50px;">
+								</a>
+							</header>
 						</div>
 					</div>
-				</div>
-				<div class="professional_projects" ; style="padding-top: 50px;">
-					<header>
-						<h3>Professional Projects</h3>
-					</header>
+
+					<!-- Sand Balls Modal -->
+					<div id="sandBallsModal" class="modal">
+						<div class="modal-content">
+							<span class="close" onclick="closeModal('sandBallsModal')">&times;</span>
+							<h2>Sand Balls</h2>
+							<p>Physics-based puzzle game with mesh deformation.</p>
+							<!-- Add more details and technical information here -->
+							<header>
+								<a href="https://tkamruzzaman.github.io/sand_balls/WebGLBuild/index.html"
+									target="_blank" class="icon solid fa-play fa-beat" ,
+									style="font-size: 14px; padding-right: 50px;">
+								</a>
+								<a href="https://github.com/tkamruzzaman/sand_balls" target="_blank"
+									class="icon brands fa-github" , style="font-size: 14px; padding-left: 50px;">
+								</a>
+							</header>
+						</div>
+					</div>
+
+					<!-- 2048 Modal -->
+					<div id="2048Modal" class="modal">
+						<div class="modal-content">
+							<span class="close" onclick="closeModal('2048Modal')">&times;</span>
+							<h2>2048</h2>
+							<p>A 2048 implementation using Unity and C#.</p>
+							<!-- Add more details and technical information here -->
+							<header>
+								<a href="https://tkamruzzaman.github.io/2048-Unity//WebGLBuild/index.html"
+									target="_blank" class="icon solid fa-play fa-beat" ,
+									style="font-size: 14px; padding-right: 50px;">
+								</a>
+								<a href="https://github.com/tkamruzzaman/2048-Unity" target="_blank"
+									class="icon brands fa-github fa-beat" ,
+									style="font-size: 14px; padding-left: 50px;">
+								</a>
+							</header>
+						</div>
+					</div>
+
+					<!-- Project Links -->
 					<div class="row">
 						<div class="col-4 col-12-mobile">
 							<article class="item">
-								<a href="https://www.themascoteers.com/game/dropple/" target="_blank"
-									class="image fit"><img src="images/pic_dropple.jpg" alt="Dropple" /></a>
-								<header>
-									<h3>Dropple</h3>
-								</header>
-							</article>
-							<article class="item">
-								<a href="https://www.themascoteers.com/game/stairway/" target="_blank"
-									class="image fit"><img src="images/pic_stairway.jpg" alt="Stairway" /></a>
-								<header>
-									<h3>Stairway</h3>
-								</header>
-							</article>
-							<article class="item">
-								<a href="https://www.themascoteers.com/game/twistedblockz/" target="_blank"
-									class="image fit"><img src="images/pic_twisted_block.jpg"
-										alt="Twisted Blockz" /></a>
-								<header>
-									<h3>Twisted Blockz</h3>
-								</header>
-							</article>
-							<article class="item">
-								<a href="https://www.themascoteers.com/game/quak/" target="_blank"
-									class="image fit"><img src="images/pic_hop_pop_and_drop.jpg"
-										alt="HOP POP & DROP" /></a>
-								<header>
-									<h3>HOP POP & DROP</h3>
-								</header>
+								<a href="javascript:void(0);" onclick="openModal('kitchenChaosModal')"
+									class="image fit image-hover">
+									<header>
+										<h3>
+											<img src="images/kitchen_chaos.png" alt="Kitchen Chaos" />Kitchen Chaos
+										</h3>
+									</header>
+								</a>							
+								<a href="javascript:void(0);" onclick="openModal('kitchenChaosModal')">
+									<span class="image-hover-overlay-text">View details</span>
+								</a>
 							</article>
 						</div>
 						<div class="col-4 col-12-mobile">
 							<article class="item">
-								<a href="https://www.themascoteers.com/game/carpenter/" target="_blank"
-									class="image fit"><img src="images/pic_carpenter.jpg" alt="Carpenter" /></a>
-								<header>
-									<h3>Carpenter</h3>
-								</header>
-							</article>
-							<article class="item">
-								<a href="https://www.themascoteers.com/game/tiltball/" target="_blank"
-									class="image fit"><img src="images/pic_tilt_ball.jpg" alt="Tilt Ball" /></a>
-								<header>
-									<h3>Tilt Ball</h3>
-								</header>
-							</article>
-							<article class="item">
-								<a href="https://youtu.be/7njKWT9ITqw" target="_blank" class="image fit"><img
-										src="images/pic_kids_puzzle.jpg" alt="Kids Puzzle" /></a>
-								<header>
-									<h3>Kids Puzzle</h3>
-								</header>
-							</article>
-							<article class="item">
-								<a href="https://www.themascoteers.com/game/tabletopper/" target="_blank"
-									class="image fit"><img src="images/pic_table_topper.webp" alt="Table Topper" /></a>
-								<header>
-									<h3>Table Topper</h3>
-								</header>
+								<a href="javascript:void(0);" onclick="openModal('sandBallsModal')" class="image fit">
+									<header>
+										<h3><img src="images/sand_balls.gif" alt="Sand Balls" />Sand Balls
+										</h3>
+									</header>
+								</a>
+								<a href="javascript:void(0);" onclick="openModal('sandBallsModal')">
+									<span class="image-hover-overlay-text">View details</span>
+								</a>
 							</article>
 						</div>
 						<div class="col-4 col-12-mobile">
 							<article class="item">
-								<a href="https://www.amazon.com/Halloween-Stunt-Mania-Candy-Rush/dp/B08L3RVHNG"
-									target="_blank" class="image fit"><img src="images/pic_halloween_stunt_mania.jpg"
-										alt="Halloween Stunt Mania" /></a>
-								<header>
-									<h3>Halloween Stunt Mania</h3>
-								</header>
-							</article>
-							<article class="item">
-								<a href="https://youtu.be/_kYBYB3gzRo" target="_blank" class="image fit"><img
-										src="images/pic_highway_racing.jpg" alt="Highway Car Racing 3D" /></a>
-								<header>
-									<h3>Highway Car Racing 3D</h3>
-								</header>
-							</article>
-
-							<article class="item">
-								<a href="https://playense.com/draw-battle-simulator-legions/" target="_blank"
-									class="image fit"><img src="images/pic_draw_legion.jpg" alt="Draw Legions" /></a>
-								<header>
-									<h3>Draw Legions</h3>
-								</header>
-							</article>
-							<article class="item">
-								<a href="https://playense.com/mage-master/" target="_blank" class="image fit"><img
-										src="images/pic_mage_master.jpg" alt="Mage Master" /></a>
-								<header>
-									<h3>Mage Master</h3>
-								</header>
+								<a href="javascript:void(0);" onclick="openModal('2048Modal')" class="image fit">
+									<header>
+										<h3><img src="images/2048.gif" alt="2048" />2048
+										</h3>
+									</header>
+								</a>
+								<a href="javascript:void(0);" onclick="openModal('2048Modal')">
+									<span class="image-hover-overlay-text">View details</span>
+								</a>
 							</article>
 						</div>
 					</div>
 				</div>
 			</div>
+			<div class="professional_projects" ; style="padding-top: 50px;">
+				<header>
+					<h3>Professional Projects</h3>
+				</header>
+				<div class="row">
+					<div class="col-4 col-12-mobile">
+						<article class="item">
+							<a href="https://www.themascoteers.com/game/dropple/" target="_blank" class="image fit"><img
+									src="images/pic_dropple.jpg" alt="Dropple" /></a>
+							<header>
+								<h3>Dropple</h3>
+							</header>
+						</article>
+						<article class="item">
+							<a href="https://www.themascoteers.com/game/stairway/" target="_blank"
+								class="image fit"><img src="images/pic_stairway.jpg" alt="Stairway" /></a>
+							<header>
+								<h3>Stairway</h3>
+							</header>
+						</article>
+						<article class="item">
+							<a href="https://www.themascoteers.com/game/twistedblockz/" target="_blank"
+								class="image fit"><img src="images/pic_twisted_block.jpg" alt="Twisted Blockz" /></a>
+							<header>
+								<h3>Twisted Blockz</h3>
+							</header>
+						</article>
+						<article class="item">
+							<a href="https://www.themascoteers.com/game/quak/" target="_blank" class="image fit"><img
+									src="images/pic_hop_pop_and_drop.jpg" alt="HOP POP & DROP" /></a>
+							<header>
+								<h3>HOP POP & DROP</h3>
+							</header>
+						</article>
+					</div>
+					<div class="col-4 col-12-mobile">
+						<article class="item">
+							<a href="https://www.themascoteers.com/game/carpenter/" target="_blank"
+								class="image fit"><img src="images/pic_carpenter.jpg" alt="Carpenter" /></a>
+							<header>
+								<h3>Carpenter</h3>
+							</header>
+						</article>
+						<article class="item">
+							<a href="https://www.themascoteers.com/game/tiltball/" target="_blank"
+								class="image fit"><img src="images/pic_tilt_ball.jpg" alt="Tilt Ball" /></a>
+							<header>
+								<h3>Tilt Ball</h3>
+							</header>
+						</article>
+						<article class="item">
+							<a href="https://youtu.be/7njKWT9ITqw" target="_blank" class="image fit"><img
+									src="images/pic_kids_puzzle.jpg" alt="Kids Puzzle" /></a>
+							<header>
+								<h3>Kids Puzzle</h3>
+							</header>
+						</article>
+						<article class="item">
+							<a href="https://www.themascoteers.com/game/tabletopper/" target="_blank"
+								class="image fit"><img src="images/pic_table_topper.webp" alt="Table Topper" /></a>
+							<header>
+								<h3>Table Topper</h3>
+							</header>
+						</article>
+					</div>
+					<div class="col-4 col-12-mobile">
+						<article class="item">
+							<a href="https://www.amazon.com/Halloween-Stunt-Mania-Candy-Rush/dp/B08L3RVHNG"
+								target="_blank" class="image fit"><img src="images/pic_halloween_stunt_mania.jpg"
+									alt="Halloween Stunt Mania" /></a>
+							<header>
+								<h3>Halloween Stunt Mania</h3>
+							</header>
+						</article>
+						<article class="item">
+							<a href="https://youtu.be/_kYBYB3gzRo" target="_blank" class="image fit"><img
+									src="images/pic_highway_racing.jpg" alt="Highway Car Racing 3D" /></a>
+							<header>
+								<h3>Highway Car Racing 3D</h3>
+							</header>
+						</article>
+
+						<article class="item">
+							<a href="https://playense.com/draw-battle-simulator-legions/" target="_blank"
+								class="image fit"><img src="images/pic_draw_legion.jpg" alt="Draw Legions" /></a>
+							<header>
+								<h3>Draw Legions</h3>
+							</header>
+						</article>
+						<article class="item">
+							<a href="https://playense.com/mage-master/" target="_blank" class="image fit"><img
+									src="images/pic_mage_master.jpg" alt="Mage Master" /></a>
+							<header>
+								<h3>Mage Master</h3>
+							</header>
+						</article>
+					</div>
+				</div>
+			</div>
+
 		</section>
 
 		<!-- Award -->
@@ -272,29 +343,36 @@
 
 					<p align="justify">Our team,
 						<a href="https://imaginecup.microsoft.com/en-us/Team/cd26a37f-4909-40ac-8b57-455525e4b1a8"
-							target="_blank">Karigor</a>,
-						won the National Finals of the 
-						<span style="color: dodgerblue;">Microsoft Imagine Cup 2015</span> 
+							target="_blank" , style="font-size: 20pt;">Karigor</a>,
+						won the National Finals of the
+						<span style="color: dodgerblue; font-size: 20pt;">Microsoft Imagine Cup 2015</span>
 						in the Game Category with our game
-						<a href="https://www.youtube.com/watch?v=FGSfYkBN_S0&ab_channel=KarigorGame"
-							target="_blank">Smoking Bad</a>,
-						a 3D puzzle platformer to create awareness about the harmful effects of smoking.
-
+						<a href="https://www.youtube.com/watch?v=FGSfYkBN_S0&ab_channel=KarigorGame" target="_blank" ,
+							style="font-size: 20pt;">Smoking Bad</a>,
+						a low-poly side-scrolling puzzle platformer game to create awareness about the harmful effects
+						of smoking.
 						<br>
 					</p>
-					<ul class="imagine_cup_2015">
-						<a href="https://github.com/tkamruzzaman/kitchen_chaos" target="_blank" class="image"><img
-								src="images/imagine_cup_2015_large.gif" alt="Imagine Cup 2015" /></a>
-						<header>
-							<a href="https://www.youtube.com/watch?v=FGSfYkBN_S0&ab_channel=KarigorGame" target="_blank"
-								class="icon brands fa-youtube" , style="padding-right: 20px;"><span class="label">Watch
-									Trailer</span> Watch Trailer </a>
-							<a href="https://imaginecup.microsoft.com/en-us/Member/WinnerCertificate?userid=Aqzh9N8PpP9toczPdAODyQ%253d%253d&compId=FeLTKnb5vHjhJt3DKcE8Ow%253d%253d&teamId=91AsVk2Le4dWQyB9d8XoPA%253d%253d"
-								target="_blank" class="icon solid fa-certificate" , style="padding-left: 20px;"><span
-									class="label">Certificate</span> Certificate </a>
-						</header>
 
-					</ul>
+					<article class="item-buttons">
+						<ul class="imagine_cup_2015">
+							<a href="https://github.com/tkamruzzaman/kitchen_chaos" target="_blank" class="image"><img
+									src="images/imagine_cup_2015_large.gif" alt="Imagine Cup 2015" /></a>
+							<header class="link-buttons">
+								<a href="https://tkamruzzaman.itch.io/smoking-bad" target="_blank"
+									class="icon solid fa-play" , style="padding-right: 20px;"><span
+										class="label">Play</span> Play </a>
+								<a href="https://www.youtube.com/watch?v=FGSfYkBN_S0&ab_channel=KarigorGame"
+									target="_blank" class="icon brands fa-youtube" , style="padding-right: 20px;"><span
+										class="label">Watch
+										Trailer</span> Watch Trailer </a>
+								<a href="https://imaginecup.microsoft.com/en-us/Member/WinnerCertificate?userid=Aqzh9N8PpP9toczPdAODyQ%253d%253d&compId=FeLTKnb5vHjhJt3DKcE8Ow%253d%253d&teamId=91AsVk2Le4dWQyB9d8XoPA%253d%253d"
+									target="_blank" class="icon solid fa-certificate" , style="padding-left: 0px;"><span
+										class="label">Certificate</span> Certificate </a>
+
+							</header>
+						</ul>
+
 
 				</section>
 			</div>
@@ -356,6 +434,8 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script src="assets/js/modal.js"></script>
+
 
 </body>
 
