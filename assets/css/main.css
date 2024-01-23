@@ -2880,7 +2880,7 @@ button:active,
 
 .close:hover,
 .close:focus {
-    color: black;
+    color: #b96b51;
     text-decoration: none;
     cursor: pointer;
 }
@@ -2907,10 +2907,19 @@ button:active,
 
 .item:hover img {
 	transform: scale(1.1);
-    filter: blur(5px); /* Adjust the blur amount as needed */
+    filter: blur(5px);
 }
 
 .item:hover .image-hover-overlay-text {
     opacity: 1;
 }
+
+.see-details-text {
+	background-color: rgba(0, 0, 0, 0.7); /* Adjust the background color and opacity as needed */
+	color: #fff; /* Adjust the text color as needed */
+	padding: 5px 10px;
+	border-radius: 5px;
+	text-decoration: none;
+}
+
 
