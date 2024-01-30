@@ -2,7 +2,7 @@ function openModal(modalId) {
     var modal = document.getElementById(modalId);
     if (modal) {
         modal.style.display = "block";
-        // Disable scrolling when the modal is open
+        // Always disable scrolling when the modal is open
         document.body.style.overflow = "hidden";
     }
 }
@@ -11,7 +11,7 @@ function closeModal(modalId) {
     var modal = document.getElementById(modalId);
     if (modal) {
         modal.style.display = "none";
-        // Enable scrolling when the modal is closed
+        // Always enable scrolling when the modal is closed
         document.body.style.overflow = "auto";
     }
 }

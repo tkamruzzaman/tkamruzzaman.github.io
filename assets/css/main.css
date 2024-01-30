@@ -2128,11 +2128,14 @@ button:active,
 
 	position: relative;
 	overflow: hidden;
+	display: inline-block;
 }
 
 .item img {
+	display: block;
 	width: 100%;
 	height: auto;
+	max-width: 100%; /* Ensure the image fits within its container */
 	transition: transform 0.3s ease-in-out;
 }
 
@@ -2337,7 +2340,7 @@ button:active,
 #footer {
 	margin-left: 375px;
 	text-align: center;
-	background-color: #282729;
+	background-color: #212528;
 	/* #dce3e2;*/
 	padding: 3em 0 4em 0;
 	box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 #00000006;
@@ -2420,12 +2423,11 @@ button:active,
 
 	/* Add the blur effect */
 	/*filter: blur(4px);
-				-webkit-filter: blur(4px);
-			
-				/* Full height */
-	/*height: 100%;
-			
-				/* Center and scale the image nicely */
+	-webkit-filter: blur(4px);		
+	/* Full height */
+	/*height: 100%;		
+	/* Center and scale the image nicely */
+
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -2855,19 +2857,20 @@ button:active,
 }
 
 .modal-content {
+	text-align:left;
 	margin: 5% auto;
 	padding: 20px;
 	background: #141414;
 	border-radius: 5px;
 	width: 80%;
-	max-width: 600px;
+	max-width: 70%;
 }
 
 .close {
-	color: #aaa;
+	color: #ffffff;
 	float: right;
 	font-size: 28px;
-	font-weight: bold;
+	font-weight: normal;
 }
 
 .close:hover,
@@ -2900,6 +2903,7 @@ button:active,
 .item:hover img {
 	transform: scale(1.1);
 	filter: blur(5px);
+	overflow: hidden;
 }
 
 .item:hover .image-hover-overlay-text {
@@ -2912,4 +2916,21 @@ button:active,
 	padding: 5px 10px;
 	border-radius: 5px;
 	text-decoration: none;
+}
+
+.item .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000080;
+    filter: blur(0);
+    transition: filter 0.3s ease-in-out;
+    pointer-events: none; 
+    overflow: hidden; 
+}
+
+.item:hover .image-overlay {
+    filter: blur(5px);
 }

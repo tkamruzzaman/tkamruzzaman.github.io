@@ -305,16 +305,37 @@
 						<div class="modal-content">
 							<span class="close" onclick="closeModal('kitchenChaosModal')">&times;</span>
 							<h2>Kitchen Chaos</h2>
-							<p>Co-op multiplayer game using NetCode for Gameobjects.</p>
-							<!-- Add more details and technical information here -->
-							<header>
-								<a href="https://tkamruzzaman.itch.io/smoking-bad" target="_blank"
-									class="icon solid fa-play fa-beat" , style="font-size: 14px; padding-right: 50px;">
+							<span>
+								<p>Co-op multiplayer game using NetCode for Gameobjects. Cook fast food orders by
+									following different recipes and deliver them
+									to the customer before the time runs out,
+									either in single-player or in co-op multiplayer mode.</p>
+								<p> Singleplayer work:
+									Implemented Character Controller, Collisions and Interactions, Objects pick up and
+									drop, Animation, C# Events and Interfaces, Shader Graph, Post Processing, New Input
+									System, Key Rebinding, and Controller
+									Input, UI, Menu Navigation and Loading, Music and Sound Effects, State Machines,
+									Scriptable Objects.
+								<p>Multiplayer work:
+									Client vs Server Auth, Netcode and Basic Setup,
+									Sync Player Movement, Animation and collisions, Pick up and drop Objects,
+									Sync Delivery Manager, Plates Counter, Trash Counter, Cutting Counter, Stove
+									Counter, and Plate Add Ingredients, Sync Game States and Pause, Handle Disconnects,
+									Connection Scene Flow, Character Selection Scene, Implement Lobby, Implement Relay,
+									Multiplayer Debugging Tools, Add Singleplayer Option, Add support for Gamepad
+								</p>
+							</span>
+							<span>
+								<a href="https://tkamruzzaman.itch.io/kitchen-chaos" target="_blank"
+									style="font-size: 20px; padding-right: 0px;">Itch.io
+									<i class="icon solid fa-play fa-beat"></i>
 								</a>
+								<br>
 								<a href="https://github.com/tkamruzzaman/kitchen_chaos" target="_blank"
-									class="icon brands fa-github" , style="font-size: 14px; padding-left: 50px;">
+									style="font-size: 20px; padding-left: 0px;">Repo
+									<i class="icon brands fa-github"></i>
 								</a>
-							</header>
+							</span>
 						</div>
 					</div>
 					<!-- Sand Balls Modal -->
@@ -326,11 +347,13 @@
 							<!-- Add more details and technical information here -->
 							<header>
 								<a href="https://tkamruzzaman.github.io/sand_balls/WebGLBuild/index.html"
-									target="_blank" class="icon solid fa-play fa-beat" ,
-									style="font-size: 14px; padding-right: 50px;">
+									target="_blank" style="font-size: 20px; padding-right: 0px;">Play
+									<i class="icon solid fa-play fa-beat"></i>
 								</a>
+								<br>
 								<a href="https://github.com/tkamruzzaman/sand_balls" target="_blank"
-									class="icon brands fa-github" , style="font-size: 14px; padding-left: 50px;">
+									style="font-size: 20px; padding-left: 0px;">Repo
+									<i class="icon brands fa-github"></i>
 								</a>
 							</header>
 						</div>
@@ -344,12 +367,13 @@
 							<!-- Add more details and technical information here -->
 							<header>
 								<a href="https://tkamruzzaman.github.io/2048-Unity//WebGLBuild/index.html"
-									target="_blank" class="icon solid fa-play fa-beat" ,
-									style="font-size: 14px; padding-right: 50px;">
+									target="_blank" style="font-size: 20px; padding-right: 0px;">Play
+									<i class="icon solid fa-play fa-beat"></i>
 								</a>
+								<br>
 								<a href="https://github.com/tkamruzzaman/2048-Unity" target="_blank"
-									class="icon brands fa-github fa-beat" ,
-									style="font-size: 14px; padding-left: 50px;">
+									style="font-size: 20px; padding-left: 0px;">Repo
+									<i class="icon brands fa-github"></i>
 								</a>
 							</header>
 						</div>
@@ -385,27 +409,47 @@
 				</header>
 				<section>
 					<header>
-						<h1> Winner of Microsoft Imagine
-							Cup 2015 National Finals</h1>
+						<h3> Winner of Microsoft Imagine
+							Cup 2015 National Finals</h3>
 					</header>
-
-					<p align="justify">Our team,
-						<a href="https://imaginecup.microsoft.com/en-us/Team/cd26a37f-4909-40ac-8b57-455525e4b1a8"
-							target="_blank" , style="font-size: 20pt;">Karigor</a>,
-						won the National Finals of the
-						<span style="color: dodgerblue; font-size: 20pt;">Microsoft Imagine Cup 2015</span>
-						in the Game Category with our game
-						<a href="https://www.youtube.com/watch?v=FGSfYkBN_S0&ab_channel=KarigorGame" target="_blank" ,
-							style="font-size: 20pt;">Smoking Bad</a>,
-						a low-poly side-scrolling puzzle platformer game to create awareness about the harmful effects
-						of smoking.
-						<br>
-					</p>
-
 					<article class="item-buttons">
 						<ul class="imagine_cup_2015">
-							<a href="https://github.com/tkamruzzaman/kitchen_chaos" target="_blank" class="image"><img
-									src="images/imagine_cup_2015_large.gif" alt="Imagine Cup 2015" /></a>
+							<!-- Imagine Cup -->
+							<article class="item">
+								<a href="javascript:void(0);" onclick="openModal('imagineCupModal')"
+									class="image fit image-hover">
+									<header>
+										<h3>
+											<img src="images/imagine_cup_2015_large.gif" alt="Smoking Bad"
+												class="image" />Smoking Bad
+										</h3>
+									</header>
+								</a>
+								<a href="javascript:void(0);" onclick="openModal('imagineCupModal')">
+									<span class="image-hover-overlay-text">View details</span>
+								</a>
+							</article>
+						</ul>
+					</article>
+					<!-- Imagine Cup Modal -->
+					<div id="imagineCupModal" class="modal">
+						<div class="modal-content">
+							<span class="close" onclick="closeModal('imagineCupModal')">&times;</span>
+							<h2>Smoking Bad</h2>
+							<p>Low-poly side-scrolling puzzle platformer game.</p>
+							<!-- Add more details and technical information here -->
+							<p align="justify">Our team,
+								<a href="https://imaginecup.microsoft.com/en-us/Team/cd26a37f-4909-40ac-8b57-455525e4b1a8"
+									target="_blank" , style="font-size: 20pt;">Karigor</a>,
+								won the National Finals of the
+								<span style="color: dodgerblue; font-size: 20pt;">Microsoft Imagine Cup 2015</span>
+								in the Game Category with our game
+								<a href="https://www.youtube.com/watch?v=FGSfYkBN_S0&ab_channel=KarigorGame"
+									target="_blank" , style="font-size: 20pt;">Smoking Bad</a>
+								to create awareness about the harmful effects
+								of smoking.
+								<br>
+							</p>
 							<header class="link-buttons">
 								<a href="https://tkamruzzaman.itch.io/smoking-bad" target="_blank"
 									class="icon solid fa-play" , style="padding-right: 20px;"><span
@@ -417,11 +461,9 @@
 								<a href="https://imaginecup.microsoft.com/en-us/Member/WinnerCertificate?userid=Aqzh9N8PpP9toczPdAODyQ%253d%253d&compId=FeLTKnb5vHjhJt3DKcE8Ow%253d%253d&teamId=91AsVk2Le4dWQyB9d8XoPA%253d%253d"
 									target="_blank" class="icon solid fa-certificate" , style="padding-left: 0px;"><span
 										class="label">Certificate</span> Certificate </a>
-
 							</header>
-						</ul>
-
-
+						</div>
+					</div>
 				</section>
 			</div>
 		</section>
