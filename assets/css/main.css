@@ -2343,7 +2343,7 @@ button:active,
 	background-color: #212528;
 	/* #dce3e2;*/
 	padding: 3em 0 4em 0;
-	box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.05), inset 0 0.1em 0.1em 0 #00000006;
+	box-shadow: inset 0 1px 0 0 #0000000d, inset 0 0.1em 0.1em 0 #00000006;
 	font-size: 0.8em;
 }
 
@@ -2405,7 +2405,7 @@ button:active,
 }
 
 #main>section.dark a:hover {
-	border-bottom-color: rgba(255, 255, 255, 0);
+	border-bottom-color: #ffffff00;
 }
 
 #main>section.cover {
@@ -2415,25 +2415,48 @@ button:active,
 }
 
 #main>section.one {
-	background-color: #141414;
-	/*#00fa60;*/
-
-	/* The image used */
+	background-color: #000000;
 	background-image: url("../../images/banner_blur.jpg");
-
-	/* Add the blur effect */
-	/*filter: blur(4px);
-	-webkit-filter: blur(4px);		
-	/* Full height */
-	/*height: 100%;		
-	/* Center and scale the image nicely */
-
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;
-
+	background-size: cover;	
 	-webkit-text-fill-color: #000000;
+
+	position: relative;
+	overflow: hidden;
+	z-index: -1;
 }
+
+#main>section.one::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../images/banner_blur.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(10px); 
+    z-index: -1;
+}
+
+/* #main>section.one h2{   
+    text-shadow: 
+        -1.1px -1.1px 0 #51b96a,  
+         1.1px -1.1px 0 #51b96a,
+        -1.1px  1.1px 0 #51b96a,
+         1.1px  1.1px 0 #51b96a; 
+}
+
+#main>section.one h4 {
+    text-shadow: 
+        -1px -1px 0 #51b96a,  
+         1px -1px 0 #51b96a,
+        -1px  1px 0 #51b96a,
+         1px  1px 0 #51b96a; 
+} */
 
 #main>section.two {
 	background-color: #141414
@@ -2859,7 +2882,7 @@ button:active,
 .modal-content {
 	text-align:left;
 	margin: 5% auto;
-	padding: 20px;
+	padding: 50px;
 	background: #141414;
 	border-radius: 5px;
 	width: 80%;
@@ -2910,27 +2933,57 @@ button:active,
 	opacity: 1;
 }
 
-.see-details-text {
-	background-color: rgba(0, 0, 0, 0.7);
-	color: #fff;
-	padding: 5px 10px;
-	border-radius: 5px;
-	text-decoration: none;
-}
 
-.item .image-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
+/*Modal buttons*/
+.banner {
+    background-color: #403c3c4b;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+	position: relative;
     width: 100%;
-    height: 100%;
-    background: #00000080;
-    filter: blur(0);
-    transition: filter 0.3s ease-in-out;
-    pointer-events: none; 
-    overflow: hidden; 
 }
 
-.item:hover .image-overlay {
-    filter: blur(5px);
+.external-link-buttons {
+    display: flex;
+    justify-content: center;
 }
+
+.link-button-container {
+    margin: 0 5px;
+}
+
+/* Show text on buttons for larger screens */
+.link-button-container a {
+    display: inline-block;
+    padding: 10px;
+    background-color: #4CAF50;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.link-button-container a:hover {
+    background-color: #2c2c2c;
+}
+
+
+
+/* Media query to hide text on buttons for small screens */
+@media screen and (max-width: 736px) {
+    .link-button-container a {
+        padding: 10px;
+        font-size: auto;
+        width: auto; /* Allow buttons to resize */
+    }
+}
+
+
+
+
+
+
+
