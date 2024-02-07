@@ -2910,6 +2910,21 @@ button:active,
 }
 
 /* Hover effect */
+
+/* Keyframe animation for scaling */
+@keyframes scaleAnimation {
+    0% {
+        transform: translate(-50%, -50%) scale(1.0);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.5);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+/* Apply the animation to the text */
 .item .image-hover-overlay-text {
 	position: absolute;
 	top: 50%;
@@ -2917,10 +2932,15 @@ button:active,
 	transform: translate(-50%, -50%);
 	opacity: 0;
 	color: #ffffff;
-	font-size: 22px;
+	font-size: 18px;
 	font-weight: bold;
 	text-align: center;
 	transition: opacity 0.3s ease-in-out;
+	text-decoration: underline;
+	/*text-shadow: -1px -1px 0 #4CAF50,  
+	1px -1px 0 #4CAF50,
+   -1px  1px 0 #4CAF50,
+	1px  1px 0 #4CAF50;*/
 }
 
 .item:hover img {
@@ -2931,6 +2951,21 @@ button:active,
 
 .item:hover .image-hover-overlay-text {
 	opacity: 1;
+	animation: scaleAnimation 0.5s ease-in-out;
+}
+
+/* Info icon */
+.item i.fas.fa-info-circle::before {
+    content: "\f05a";
+    font-family: FontAwesome; 
+    position: absolute;
+    top: 20px; 
+    right: 20px; 
+    transition: content 0.3s; 
+}
+
+.item:hover i.fas.fa-info-circle::before {
+    content: "\f065"; 
 }
 
 
@@ -2980,17 +3015,4 @@ button:active,
     }
 }
 
-/* Info icon */
-.item i::before {
-    content: "\f05a";
-    font-family: FontAwesome; 
-    position: absolute;
-    top: 20px; 
-    right: 20px; 
-    transition: content 0.3s; 
-}
-
-.item:hover i::before {
-    content: "\f065"; 
-}
 
