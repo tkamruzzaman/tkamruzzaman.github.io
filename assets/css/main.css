@@ -2971,7 +2971,6 @@ button:active,
 }
 
 
-
 /* Media query to hide text on buttons for small screens */
 @media screen and (max-width: 736px) {
     .link-button-container a {
@@ -2981,9 +2980,17 @@ button:active,
     }
 }
 
+/* Info icon */
+.item i::before {
+    content: "\f05a";
+    font-family: FontAwesome; 
+    position: absolute;
+    top: 20px; 
+    right: 20px; 
+    transition: content 0.3s; 
+}
 
-
-
-
-
+.item:hover i::before {
+    content: "\f065"; 
+}
 
